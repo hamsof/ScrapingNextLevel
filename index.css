@@ -54,10 +54,10 @@ main{
     row-gap: 20px;
 }
 .book_item > img{
-    border: 2px solid gray;
+    border: 2px solid rgb(240, 173, 148);
     padding: 10px;
-    height: 100px;
-    width: 150px;
+    height: 150px;
+    width: 120px;
 }
 .book_item{
     text-align: center;
