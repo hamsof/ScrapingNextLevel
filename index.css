@@ -57,6 +57,8 @@ main{
     color: green;
 }
 .book_item > button{
+    margin-top: 10px;
+    width: 130px;
     padding: 10px;
     background-color: rgb(240, 173, 148);
     border: 1px solid gray;
