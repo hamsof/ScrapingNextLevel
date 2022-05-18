@@ -5,25 +5,36 @@
 }
 
 .header{
-    text-align: center;
-    font-family: cursive;
-    font-size: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     border: 1px solid gray;
     margin: 0 auto;
-    margin-top: 20px;
     width: 90%;
+    background-color: rgb(240, 173, 148);
 }
+.header > img {
+    width: 100px;
+    height: 100px;
+}
+.header  > p{
+    font-family: cursive;
+    font-size: 50px;
+}
+
+
+
 
 main{
     margin: 50px auto;
     width: 90%;
-    display: grid;
+    /* display: grid;
     grid-template-columns: 20% 80%;
-    gap: 10px;
+    gap: 10px; */
 }
 
 
-.links{
+/* .links{
     padding: 30px;
     background-color: rgb(207, 218, 223);
     grid-column: 1;
@@ -35,7 +46,7 @@ main{
 }
 .link_list li{
     padding: 3px;
-}
+} */
 
 
 
@@ -44,7 +55,7 @@ main{
 .books{
     padding: 20px;
     /* border: 1px solid black; */
-    grid-column: 2;
+    /* grid-column: 2; */
 
 
     display: grid;
