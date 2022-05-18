@@ -53,7 +53,13 @@ main{
 .book_item > p{
     padding: 5px;
 }
-.book_item :nth-child(3),.book_item :nth-child(4){
+.book_item :nth-child(3){
+    color: green;
+}
+.not_stock{
+    color:red;
+}
+.in_stock{
     color: green;
 }
 .book_item > button{
