@@ -1,0 +1,81 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family:Arial, Helvetica, sans-serif
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid gray;
+    margin: 0 auto;
+    width: 90%;
+    background-color: rgb(240, 173, 148);
+}
+.header > img {
+    width: 100px;
+    height: 100px;
+}
+.header  > p{
+    font-family: cursive;
+    font-size: 50px;
+}
+
+
+table{
+    padding: 20px;
+    margin: 0 auto;
+}
+
+main{
+    margin: 50px auto;
+    width: 90%;
+}
+
+td{
+    text-align: center;
+    padding-right: 200px;
+}
+td:nth-last-child(1)
+{
+    padding-right: 0px;
+}
+
+td > img{
+    border: 2px solid rgb(240, 173, 148);
+    padding: 10px;
+    height: 190px;
+    width: 150px;
+}
+td p {
+    padding: 8px;
+}
+td > button{
+    margin-top: 5px;
+    width: 180px;
+    padding: 10px;
+    background-color: rgb(240, 173, 148);
+    border: 1px solid gray;
+    border-radius: 10px;
+    cursor: pointer;
+}
+td > button:hover{
+    background-color: white;
+    color:rgb(240, 173, 148);
+}
+
+.left_allign{
+    float: left;
+    color: green;
+}
+.not_stock{
+    color:red;
+}
+.in_stock{
+    color: green;
+}
+
+a:link { 
+    color:rgb(112, 130, 211); text-decoration:none; border: none; 
+}
