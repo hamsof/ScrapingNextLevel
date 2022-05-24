@@ -18,8 +18,13 @@
     height: 100px;
 }
 .header  > p{
+    text-align: center;
     font-family: cursive;
     font-size: 50px;
+}
+.small{
+    font-size: 10px;
+    color: rgb(83, 80, 80);
 }
 
 
@@ -35,7 +40,8 @@ main{
 
 td{
     text-align: center;
-    padding-right: 200px;
+    padding-right: 120px;
+    width: 200px;
 }
 td:nth-last-child(1)
 {
@@ -50,11 +56,12 @@ td > img{
 }
 td p {
     padding: 8px;
+    padding-left: 0px;
 }
 td > button{
     margin-top: 5px;
-    width: 180px;
-    padding: 10px;
+    width: 200px;
+    padding: 15px;
     background-color: rgb(240, 173, 148);
     border: 1px solid gray;
     border-radius: 10px;
@@ -69,6 +76,12 @@ td > button:hover{
     float: left;
     color: green;
 }
+.green{
+    color: green;
+}
+.right_allign{
+    float: right;
+}
 .not_stock{
     color:red;
 }
@@ -76,6 +89,14 @@ td > button:hover{
     color: green;
 }
 
-a:link { 
+a:link , a:visited{ 
     color:rgb(112, 130, 211); text-decoration:none; border: none; 
+}
+.fa-star-o{
+    color:rgb(240, 173, 148) ;
+    padding: 2px;
+}
+.review{
+    text-decoration: underline;
+    /* color: #73858d; */
 }
