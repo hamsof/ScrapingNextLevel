@@ -35,7 +35,8 @@ main{
 
 td{
     text-align: center;
-    padding-right: 200px;
+    padding-right: 120px;
+    width: 120px;
 }
 td:nth-last-child(1)
 {
