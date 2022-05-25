@@ -12,10 +12,11 @@
     margin: 0 auto;
     width: 90%;
     background-color: rgb(240, 173, 148);
+    border: none;
 }
 .header > img {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
 }
 .header  > p{
     text-align: center;
@@ -26,7 +27,6 @@
     font-size: 10px;
     color: rgb(83, 80, 80);
 }
-
 
 table{
     padding: 20px;
@@ -59,6 +59,8 @@ td p {
     padding-left: 0px;
 }
 td > button{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
     margin-top: 5px;
     width: 200px;
     padding: 15px;
