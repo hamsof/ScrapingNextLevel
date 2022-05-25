@@ -28,6 +28,41 @@
     color: rgb(83, 80, 80);
 }
 
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid gray;
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 75%;
+    border: solid 3px rgb(240, 173, 148);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.books_titles{
+    display: flex;
+}
+#book_title,.books_titles_item,#home{
+    font-family: cursive;
+    cursor: pointer;
+}
+#book_title:hover,.books_titles_item:hover,#home:hover{
+    text-decoration: underline rgb(240, 173, 148);
+}
+#home{
+    padding-right: 30px;
+}
+#book_title{
+    font-size: 25px;
+}
+.books_titles_item{
+    margin-left: 10px;
+}
+
 table{
     padding: 20px;
     margin: 0 auto;
