@@ -88,13 +88,16 @@ td > button:hover{
 .in_stock{
     color: green;
 }
-
 a:link , a:visited{ 
     color:rgb(112, 130, 211); text-decoration:none; border: none; 
 }
-.fa-star-o{
+.fa-star{
     color:rgb(240, 173, 148) ;
     padding: 2px;
+}
+.not_filled{
+    color: grey;
+    opacity: 50%;
 }
 .review{
     text-decoration: underline;
