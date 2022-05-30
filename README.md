@@ -1,3 +1,5 @@
+Check version 2 for more pages !
+
 Book Listing for my friend !
 https://hamsof.github.io/simple-book-show/
 
