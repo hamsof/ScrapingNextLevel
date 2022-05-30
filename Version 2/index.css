@@ -62,6 +62,10 @@
 .books_titles_item{
     margin-left: 10px;
 }
+.books_titles_item > a:link, .books_titles_item > a:visited{
+    color: black;
+    text-decoration: rgb(240, 173, 148);
+}
 
 table{
     padding: 20px;
