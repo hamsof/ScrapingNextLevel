@@ -18,10 +18,11 @@
     width: 120px;
     height: 120px;
 }
-.header  > p{
+.large{
     text-align: center;
     font-family: cursive;
     font-size: 50px;
+    margin-bottom: 0%;
 }
 .small{
     font-size: 10px;
