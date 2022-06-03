@@ -121,6 +121,11 @@ td > button:hover{
 .right_allign{
     float: right;
 }
+
+.left_allign{
+    float: left;
+    color: green;
+}
 .not_stock{
     color:red;
 }

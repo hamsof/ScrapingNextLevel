@@ -47,6 +47,7 @@
 #book_title{
     background-color: rgb(240, 173, 148);
     width: 100%;
+    text-decoration: none;
 }
 .items{
     overflow: hidden;
