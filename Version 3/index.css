@@ -52,7 +52,15 @@
 .items{
     overflow: hidden;
 }
-
+#book_page_titile
+{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 2rem;
+    padding-left: 20px;
+    margin: 30px 0px;
+    cursor: pointer;
+    border-bottom: 1px solid #eee;
+}
 .book_container{
     display: flex;
     flex-direction: column;
@@ -136,6 +144,9 @@ a:link , a:visited{
 }
 
 @media screen and (max-width: 768px){
+    #book_page_titile{
+        text-align: center;
+    }
     .image-container{
         width: 70px;
     }
