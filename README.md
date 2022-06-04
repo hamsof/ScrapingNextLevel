@@ -1,12 +1,10 @@
 Check version 2 for more pages !
 
 Book Listing for my friend !
-https://hamsof.github.io/simple-book-show/
-
-Previous Grid Formet html page is present in changed folder
-New index.html is according to table element
 
 
-Version 1-> Just simple HTML
-Version 2-> CSS Version
-Version 3-> Bootsrap addition and Scraping
+Version 1 : Simple HTML page 
+Version 2 : Html with CSS with table format have desgined python script for scraping.
+Version 3 : Completely New Layout in Grid and Flex model with Bootstrap for responsive design
+
+Version 2 Github pages For version 3 click on left most link : https://hamsof.github.io/simple-book-show/
