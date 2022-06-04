@@ -74,7 +74,9 @@
     height: 190px;
     width: 150px;
 }
-
+.book_name{
+    text-align: center;
+}
 .book_container  > p,.book_container > .align-left p{
     margin-bottom: 8px;
 }
