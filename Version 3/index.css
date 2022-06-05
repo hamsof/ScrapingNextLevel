@@ -76,9 +76,14 @@
 }
 .book_name{
     text-align: center;
+    height: 80px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .book_container  > p,.book_container > .align-left p{
-    margin-bottom: 8px;
+    margin-bottom: 1px;
 }
 
 .align-left{
@@ -170,5 +175,15 @@ a:link , a:visited{
     }
     .navbar>ul>li{
         width: 100%;
+    }
+}
+@media screen and (max-width: 660px){
+    .book_container{
+        margin-left: 2px;
+    }
+    .row{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
     }
 }
