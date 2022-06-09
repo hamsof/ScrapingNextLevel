@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Version 3</title>
+
+    <!-- external style sheet -->
+    <link rel="stylesheet" href="./index.css">
+
+    <!--Bootstrap style sheet-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!--for icons of tick and cross ans star for in stock-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+
+  </head>
+  <body>
+    <header class="header d-flex align-items-center justify-content-between">
+        <img class="image-container" src="./images//arif.jpg" alt="arif"/>
+         <p> <span class="large_text">Scraper Site</span> </br><span class="small_text"> Powered By &copy Dr. Arif Butt<span></p>
+        <img class="image-container" src="./images/pucit.jpg" alt="pucit"/>
+    </header>
+    <section>
+        <div class="main-container d-flex align-items-start justify-content-between">
+            <div class="navbar">
+                <ul class="nav-links">
+                    <div class="link text-center" id="book_title">Books Titles</div>
+                    <li class="link book_type"><a href="index.html">Operating System</a></li>
+                    <li class="link book_type"><a href="SP.html">System Programming</a></li>
+                    <li class="link book_type"><a href="CA.html">Computer Architecture</a></li>
+                </ul>
+            </div>
+            <div class="items">
+                <div id="book_page_titile">Computer Architecture</div>
+                <div class="row">
+                    <div class="book_container col-sm-4">
+                        <img src="images/CA quantitative.jpg" alt="" >                        
+                        <p  class="book_name"><a href="https://www.amazon.com/Computer-Architecture-Quantitative-John-Hennessy/dp/012383872X" target="_blank">Computer Architecture: A Quantitative Approach By David A Patterson</a></p>
+                        <div class="align-left">
+                            <p class=" price green">Rs.2000</p>
+                            <p class="stock in_stock " data-stock="in stock"><i class="fa fa-check" aria-hidden="true"></i> In stock</p>
+                            <div><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star not_filled"></span><span class="fa fa-star  not_filled"></span><span class="fa fa-star  not_filled"></span></div>
+                            <p class="review green" data-rating="10">10 Reviews</p>
+                            <button>Add to cart</button>
+                        </div>
+                    </div>
+                    <div class="book_container col-sm-4">
+                        <img src="images/modern computer arc.jpg" alt="" >                        
+                        <p  class="book_name"><a href="https://www.amazon.com/s?k=Modern+Computer+Architecture+and+Organization&i=stripbooks-intl-ship&ref=nb_sb_noss" target="_blank">Modern Computer Architecture and Organization By Jim Ledin</a></p>
+                        <div class="align-left">
+                            <p class=" price green">Rs.5000</p>
+                            <p class="stock in_stock " data-stock="in stock"><i class="fa fa-check" aria-hidden="true"></i> In stock</p>
+                            <div><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star not_filled"></span></div>
+                            <p class="review green" data-rating="10">10 Reviews</p>
+                            <button>Add to cart</button>
+                        </div>
+                    </div>
+                    <div class="book_container col-sm-4">
+                        <img src="images/computer organization.jpg" alt="">                        
+                        <p  class="book_name"><a href="https://www.amazon.com/s?k=computer+organization+and+design&i=stripbooks-intl-ship&ref=nb_sb_noss" target="_blank">Computer Organization and Design </br>By David A Patterson</a></p>
+                        <div class="align-left">
+                            <p class=" price green">Rs.6900</p>
+                            <p class="stock not_stock " data-stock="not in stock"><i class="fa fa-times" aria-hidden="true"></i> Not in stock</p>
+                            <div><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></div>
+                            <p class="review green" data-rating="50">50 Reviews</p>
+                            <button>Add to cart</button>
+                        </div>
+                    </div>
+                    <div class="book_container col-sm-4">
+                        <img src="images/digital design.jpg" alt="" >                        
+                        <p  class="book_name"><a href="https://www.amazon.com/Digital-Design-Computer-Architecture-Harris/dp/0123944244" target="_blank">Digital Design and Computer Architecture </br> By David Harris</a></p>
+                        <div class="align-left">
+                            <p class=" price green">Rs.2700</p>
+                            <p class="stock not_stock " data-stock="not in stock"><i class="fa fa-times" aria-hidden="true"></i> Not in stock</p>
+                            <div><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star not_filled"></span><span class="fa fa-star not_filled"></span></div>
+                            <p class="review green" data-rating="80">80 Reviews</p>
+                            <button>Add to cart</button>
+                        </div>
+                    </div>
+                    <div class="book_container col-sm-4">
+                        <img src="images/essentials.jpg" alt="" >                        
+                        <p  class="book_name"><a href="https://www.amazon.com/s?k=Essentials+of+computer+architecture&i=stripbooks-intl-ship&ref=nb_sb_noss" target="_blank"> Essentials of computer architecture</br> By Douglas Comer </a></p>
+                        <div class="align-left">
+                            <p class=" price green">Rs.1700</p>
+                            <p class="stock in_stock " data-stock="in stock"><i class="fa fa-check" aria-hidden="true"></i> In stock</p>
+                            <div><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star not_filled"></span><span class="fa fa-star not_filled"></span></div>
+                            <p class="review green" data-rating="20">20 Reviews</p>
+                            <button>Add to cart</button>
+                        </div>
+                    </div>
+                    <div class="book_container col-sm-4">
+                        <img src="images/clean.jpg" alt="" >                        
+                        <p  class="book_name"><a href="https://www.amazon.com/Clean-Architecture-Craftsmans-Software-Structure/dp/0134494164/ref=sr_1_1?crid=25BZB3Z47L23L&keywords=clean+architecture%3A+a+craftsman%27s+guide+to+software+structure&qid=1653896891&s=books&sprefix=essentials+of+computer+architecture%2Cstripbooks-intl-ship%2C908&sr=1-1" target="_blank">Clean Architecture  </br> By Robert Cecil</a></p></p>
+                        <div class="align-left">
+                            <p class=" price green">Rs.1800</p>
+                            <p class="stock not_stock " data-stock="not in stock"><i class="fa fa-times" aria-hidden="true"></i> Not in stock</p>
+                            <div><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star not_filled"></span></div>
+                            <p class="review green" data-rating="210">210 Reviews</p>
+                            <button>Add to cart</button>
+                        </div>
+                    </div>
+                    <div class="book_container col-sm-4">
+                        <img src="images/parallel.jpg" alt="" >                        
+                        <p  class="book_name"><a href="https://www.amazon.com/s?k=Parallel+Computer+Architecture&i=stripbooks-intl-ship&ref=nb_sb_noss" target="_blank">Parallel Computer Architecture<br> By Anoop Gupta</a></p>
+                        <div class="align-left">
+                            <p class=" price green">Rs.6000</p>
+                            <p class="stock in_stock " data-stock="in stock"><i class="fa fa-check" aria-hidden="true"></i> In stock</p>
+                            <div><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star not_filled"></span><span class="fa fa-star not_filled"></span><span class="fa fa-star not_filled"></span></div>
+                            <p class="review green" data-rating="30">30 Reviews</p>
+                            <button>Add to cart</button>
+                        </div>
+                    </div>
+                    <div class="book_container col-sm-4">
+                        <img src="images/flow.jpg" alt="" >                        
+                        <p  class="book_name"><a href="https://www.amazon.com/s?k=Flow+Architectures&i=stripbooks-intl-ship&crid=1Q5V8EFZD43KT&sprefix=flow+architectures%2Cstripbooks-intl-ship%2C275&ref=nb_sb_noss_1" target="_blank">Flow Architectures</br> By James Urquhart </a></p>
+                        <div class="align-left">
+                            <p class=" price green">Rs.1000</p>
+                            <p class="stock in_stock " data-stock="in stock"><i class="fa fa-check" aria-hidden="true"></i> In stock</p>
+                            <div><span class="fa fa-star"></span><span class="fa fa-star "></span><span class="fa fa-star not_filled"></span><span class="fa fa-star not_filled"></span><span class="fa fa-star not_filled"></span></div>
+                            <p class="review green" data-rating="70">70 Reviews</p>
+                            <button>Add to cart</button>
+                        </div>
+                    </div>
+                    <div class="book_container col-sm-4">
+                        <img src="images/CA for scientists.jpg" alt="" >                        
+                        <p  class="book_name"><a href="https://www.amazon.com/s?k=Computer+Architecture+for+Scientists&i=stripbooks-intl-ship&crid=3K6LN11EX4H9X&sprefix=computer+architecture+for+scientists%2Cstripbooks-intl-ship%2C276&ref=nb_sb_noss_2" target="_blank"> Computer Architecture for Scientists</br> By Andrew Andai Chien</p></a></p>
+                        <div class="align-left">
+                            <p class=" price green">Rs.1800</p>
+                            <p class="stock in_stock " data-stock="in stock"><i class="fa fa-check" aria-hidden="true"></i> In stock</p>
+                            <div><span class="fa fa-star"></span><span class="fa fa-star "></span><span class="fa fa-star"></span><span class="fa fa-star not_filled"></span><span class="fa fa-star not_filled"></span></div>
+                            <p class="review green" data-rating="60">60 Reviews</p>
+                            <button>Add to cart</button>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
