@@ -6,7 +6,7 @@
     <title>Login page</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index_login.css">
 
 </head>
 <body class="login-page">
@@ -25,12 +25,12 @@
       <div class="login-block">
         <h1>Log into your account</h1>
 
-        <form action="#">
+        <form onsubmit="return callBookPage()" action="OS.html"  name="login_form">
 
           <div class="form-group">
             <div class="input-group">
               <span class="input-group-addon"><i class="fa fa-user ti-user"></i></span>
-              <input type="text" class="form-control" id="name" placeholder="Username">
+              <input type="text" class="form-control" id="name" placeholder="Username" name="name">
             </div>
           </div>
               
@@ -40,9 +40,11 @@
           <div class="form-group">
             <div class="input-group">
               <span class="input-group-addon"><i class="fa fa-lock ti-unlock"></i></span>
-              <input type="password" class="form-control" id="password" placeholder="Password">
+              <input type="password" class="form-control" id="password" placeholder="Password" name="password">
             </div>
           </div>
+
+          <div id="alert" style="color:red"></div>
 
           <button class="btn btn-primary btn-block" id="submit_button" type="submit">Login</button>
 
@@ -51,4 +53,23 @@
 
     </main>
 </body>
+
+<script>
+
+function callBookPage()
+{
+  if(document.login_form.name.value!="arif")
+  {
+    document.getElementById("alert").innerHTML = "*Please enter valid creditials";
+    return false;
+  }
+
+  if(document.login_form.password.value !="datascience")
+  return false;
+
+  return true;
+}
+
+</script>
+
 </html>
