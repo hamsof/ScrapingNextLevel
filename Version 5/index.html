@@ -65,7 +65,10 @@ function callBookPage()
   }
 
   if(document.login_form.password.value !="datascience")
-  return false;
+  {
+    document.getElementById("alert").innerHTML = "*Please enter valid creditials";
+    return false;
+  }
 
   return true;
 }
