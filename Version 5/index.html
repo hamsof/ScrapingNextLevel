@@ -24,13 +24,13 @@
     <main>
       <div class="login-block">
         <h1>Log into your account</h1>
-
-        <form onsubmit="return callBookPage()" action="OS.html"  name="login_form">
+        <div id="alert" style="color:blue; font-size: smaller;"></div>
+        <form onsubmit="return callBookPage()" action="OS.html"  name="login_form" >
 
           <div class="form-group">
             <div class="input-group">
               <span class="input-group-addon"><i class="fa fa-user ti-user"></i></span>
-              <input type="text" class="form-control" id="name" placeholder="Username" name="name">
+              <input type="text" class="form-control" id="name" placeholder="Username" name="name" required>
             </div>
           </div>
               
@@ -40,11 +40,9 @@
           <div class="form-group">
             <div class="input-group">
               <span class="input-group-addon"><i class="fa fa-lock ti-unlock"></i></span>
-              <input type="password" class="form-control" id="password" placeholder="Password" name="password">
+              <input type="password" class="form-control" id="password" placeholder="Password" name="password" required>
             </div>
           </div>
-
-          <div id="alert" style="color:red"></div>
 
           <button class="btn btn-primary btn-block" id="submit_button" type="submit">Login</button>
 
@@ -56,17 +54,29 @@
 
 <script>
 
+window.onload = function (){
+  document.getElementById("name").focus();
+}
+
+
 function callBookPage()
 {
+
   if(document.login_form.name.value!="arif")
   {
+    document.getElementById("name").focus(); // focus to username
+
     document.getElementById("alert").innerHTML = "*Please enter valid creditials";
+
     return false;
   }
-
   if(document.login_form.password.value !="datascience")
   {
+    document.login_form.password.value ="";  // if password is wrong set flus its previous text 
+
+    document.getElementById("password").focus(); // focus to password
     document.getElementById("alert").innerHTML = "*Please enter valid creditials";
+
     return false;
   }
 

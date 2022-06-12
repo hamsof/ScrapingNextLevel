@@ -50,9 +50,9 @@
 }
 .login-block h1
 {
-  font-size:22px;
-  margin-bottom:60px;
-  margin-top:40px
+  font-size:30px;
+  margin-bottom:40px;
+  margin-top:30px
 }
 .login-block h6
 {
@@ -89,6 +89,7 @@
   font-size:19px;
   display:flex;
   align-items: center;
+  padding-right: 9px;
 }
 .login-block .btn-block
 {
@@ -213,5 +214,5 @@
 }
 
 .login-block .form-control:focus{
-    box-shadow: none;
+    /* box-shadow: none; */
 }
