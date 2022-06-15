@@ -105,7 +105,12 @@ def homes():
         except:
             area = "No info given"
         try:    
-            pic = driver.find_element(By.XPATH,'//*[@aria-label="Listing photo"]').get_attribute('src')        
+            WebDriverWait(i, 10).until(EC.presence_of_element_located((By.XPATH, './/*[@aria-label="Listing photo"]')))
+            pic = i.find_element(By.XPATH,'.//*[@aria-label="Listing photo"]').get_attribute('data-src')    
+            if (pic == None):
+                pic = i.find_element(By.XPATH,'.//*[@aria-label="Listing photo"]').get_attribute('src')
+                if(pic == None): 
+                    pic = "No pic"        
         except:
             pic = "No info given"    
         print(price, " " ,address, " " ,beds, " ",baths, " ", area, " ",pic)
