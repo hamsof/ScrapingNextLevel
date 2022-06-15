@@ -11,5 +11,11 @@
 ## Version 5:  
 The login page added
 
+## Version 6:
+Scraping of zameen.com
+Applying filters of city, marla and price wise and then fetching houses information of adreess,pic,size,price,no of baths,bedroms 
+
+Initially I have applied filters of city = Lahore , min price = 50 lakh  max price = 1 crore and then I was able to get 1200+ houses data in the CSV file
+
 ## Github pages :
 https://hamsof.github.io/simple-book-show/
