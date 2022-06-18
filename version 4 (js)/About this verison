@@ -1,0 +1,4 @@
+##Login
+
+Actually this is about the failure of Beautiful Soup and Request library. Now the main content is being loaded by js . The request library will not be able to parse html 
+render by js. run index .html file in some github pages or online server and request some book related content
