@@ -36,8 +36,10 @@
 
 
             <!-- main content  -->
-
-            <div class="items" style="display: none;" id="main_content">
+            <script>
+                document.write(
+                    `
+                    <div class="items" style="" id="main_content">
                 <div id="book_page_titile">Operating Systems</div>
                 <div class="row">
                     <div class="book_container col-sm-4">
@@ -141,21 +143,13 @@
                     </div>
             </div>
         </div>
+                    `
+                )
+            </script>
+
+
     </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-    
-    
-    <!-- to show when disable javaScript the main content will not be showed -->
-
-    <!-- Actually the logic is i have hide the main content which are books and have showed the content
-    form the js and when we disbale js obviously the main content i means books will not be showed! -->
-    <script>
-
-        document.getElementById("main_content").style.display = 'block'
-
-    </script>
-  
-
 
 
 </body>
