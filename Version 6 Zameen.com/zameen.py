@@ -1,3 +1,6 @@
+########### By only using selenium not BS4
+
+
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
@@ -12,7 +15,14 @@ driver = webdriver.Chrome(service=s)
 url  = 'https://www.zameen.com'
 driver.get(url)
 
-time.sleep(2)
+
+##### closing the pop up
+time.sleep(5)
+driver.switch_to.frame(driver.find_element(By.CSS_SELECTOR,"#google_ads_iframe_\/31946216\/Splash_660x500_0"))
+popup = driver.find_element(By.CLASS_NAME,'close_cross_big')
+popup.click()
+driver.switch_to.default_content()
+time.sleep(3)
 
 ##### zameen.com main page filters 
 
@@ -110,7 +120,7 @@ def homes():
             if (pic == None):
                 pic = i.find_element(By.XPATH,'.//*[@aria-label="Listing photo"]').get_attribute('src')
                 if(pic == None): 
-                    pic = "No pic"        
+                    pic = "No pic"    
         except:
             pic = "No info given"    
         print(price, " " ,address, " " ,beds, " ",baths, " ", area, " ",pic)
