@@ -57,6 +57,7 @@ chose_max_price = driver.find_element(By.XPATH,'//*[@id="large-search-form"]/div
 chose_max_price.send_keys(10000000) # max price 1 crore
 chose_price.click()
 
+time.sleep(3)
 #### marla button
 find_length = driver.find_element(By.XPATH,'//*[@aria-label="Area filter"]')
 find_length.click()
@@ -67,6 +68,10 @@ chose_min_length.send_keys(5) # 5 marla
 chose_max_length = driver.find_element(By.XPATH,'//*[@id="large-search-form"]/div/div/div[1]/div[5]/div/div[2]/div/div[1]/div[2]/div[2]/div[1]/input')
 chose_max_length.send_keys(20) # 10 marla 
 find_length.click()
+
+time.sleep(5)
+
+e = WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.TAG_NAME, 'article')))
 
 
 driver.refresh() #sometimes it does not show actual results by reload it will !
