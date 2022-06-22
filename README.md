@@ -16,7 +16,7 @@ The login page added
   Applying filters of city, marla and price wise and then fetching houses information of adreess,pic,size,price,no of baths,bedroms 
 
   Initially I have applied filters of city = Lahore , min price = 50 lakh  max price = 1 crore and then I was able to get 1200+ houses data in the CSV file <br>
-##Veriosn 7:
+## Veriosn 7:
   Github scraping from using PyGithub and also with selenium to scrape users information. <br>
   read PyGithub API: https://pygithub.readthedocs.io/en/latest/introduction.html<br>
   
