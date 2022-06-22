@@ -12,10 +12,17 @@
 The login page added
 
 ## Version 6:
-Scraping of zameen.com
-Applying filters of city, marla and price wise and then fetching houses information of adreess,pic,size,price,no of baths,bedroms 
+  Scraping of zameen.com
+  Applying filters of city, marla and price wise and then fetching houses information of adreess,pic,size,price,no of baths,bedroms 
 
-Initially I have applied filters of city = Lahore , min price = 50 lakh  max price = 1 crore and then I was able to get 1200+ houses data in the CSV file
-
+  Initially I have applied filters of city = Lahore , min price = 50 lakh  max price = 1 crore and then I was able to get 1200+ houses data in the CSV file
+##Veriosn 7:
+  Github scraping from using PyGithub and also with selenium to scrape users information.
+  read PyGithub API: https://pygithub.readthedocs.io/en/latest/introduction.html
+  
+  Version 1: User name, name , email, from pakistan who has repos greater than 50. Data of 1200 peope stored in json.
+  Version 2: Fetching programming langueages used by users as well.
+  Version 3: In this version the task was not to use API and scrape users information. I have used selenium and scrape users` information from main page of Github.
+  
 ## Github pages :
 https://hamsof.github.io/simple-book-show/
