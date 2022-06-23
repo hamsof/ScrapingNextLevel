@@ -33,7 +33,7 @@ fetch("books.json")
 
 function load_books()
 {
-    for (let i=0;i<3;i++)
+    for (let i=0;i<9;i++)
     {
         loadBook()
     }
@@ -53,7 +53,7 @@ window.addEventListener('scroll', () => {
 function showLoading() {
 	// load more data
     loading.classList.add('show');
-    setTimeout(load_books, 500); 
+    setTimeout(load_books, 1000); 
 }
 
 load_books()
