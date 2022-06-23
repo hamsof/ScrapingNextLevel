@@ -1,3 +1,6 @@
+count = 0
+const loading = document.querySelector('.loading');
+
 function loadBook() {
 fetch("books.json")
         .then((res) => {
@@ -6,7 +9,8 @@ fetch("books.json")
         .then(data =>   {
     const book = document.createElement("div")
     book.classList.add("book_container","col-sm-4")
-    book_data = data[Math.floor(Math.random() * 99)]
+    book_data = data[count]
+    count++;
     rating = Math.floor(Math.random() * 200 + 1)
 
     book.innerHTML =
@@ -23,10 +27,33 @@ fetch("books.json")
     `
     container = document.getElementById("container")
     container.appendChild(book)})
+
+    loading.classList.remove('show');
 }
 
-for (let i=0;i<9;i++)
+function load_books()
 {
-    loadBook()
+    for (let i=0;i<3;i++)
+    {
+        loadBook()
+    }
 }
 
+window.addEventListener('scroll', () => {
+	const { scrollTop, scrollHeight, clientHeight } = document.documentElement;
+	
+	console.log( { scrollTop, scrollHeight, clientHeight });
+	
+	if(clientHeight + scrollTop >= scrollHeight - 5) {
+		// show the loading animation
+		showLoading();
+	}
+});
+
+function showLoading() {
+	// load more data
+    loading.classList.add('show');
+    setTimeout(load_books, 500); 
+}
+
+load_books()
