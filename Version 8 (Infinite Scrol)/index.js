@@ -65,7 +65,7 @@ function showlastPage(){
 
 function showLoading() {
         loading.classList.add('show');
-        setTimeout(load_books, 10); 
+        setTimeout(load_books, 1000); 
 }
 
 window.addEventListener('scroll', show_more);
