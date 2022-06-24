@@ -1,0 +1,243 @@
+.header{
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    background-color: rgb(240, 173, 148);
+}
+.header  > p{
+    text-align: center;
+    font-family: cursive;
+}
+.small_text{
+    font-size: 10px;
+    color: rgb(83, 80, 80);
+}
+.large_text{
+    font-size: 40px;
+}
+
+.image-container{
+    width: 100px;
+    height: 100%;
+}
+.nav-links{
+    list-style: none;
+}
+.nav-links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.link{
+    background-color: #f3f3f3;
+    border:1px solid #ddd;
+    width: 20vw;
+    text-align: left;
+    padding: 10px 5px;
+    margin: 5px 0px;
+    border-radius: 4px;
+    font-family:cursive;
+    cursor: pointer;
+}
+.nav-links :hover{
+    background-color: #dddddd;
+    text-decoration: underline;
+}
+#book_title{
+    background-color: rgb(240, 173, 148);
+    width: 100%;
+    text-decoration: none;
+}
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.items{
+    width: 80%;
+    overflow: hidden;
+}
+#book_page_titile
+{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 2rem;
+    padding-left: 20px;
+    margin: 30px 0px;
+    cursor: pointer;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+}
+.book_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.book_container >img{
+    border: 2px solid rgb(240, 173, 148);
+    padding: 10px;
+    height: 190px;
+    width: 150px;
+}
+.book_name{
+    text-align: center;
+    height: 80px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.book_container  > p,.book_container > .align-left p{
+    margin-bottom: 1px;
+}
+
+.align-left{
+    display: flex;
+    flex-direction: column;
+    /* padding-right: 2rem; */
+}
+
+
+.book_container > .align-left button{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    margin-top: 5px;
+    width: 200px;
+    padding: 10px;
+    background-color: rgb(240, 173, 148);
+    border: 1px solid gray;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.book_container > .align-left button:hover{
+    background-color: white;
+    color:rgb(240, 173, 148);
+}
+
+.green{
+    color: green;
+}
+.right_allign{
+    float: right;
+}
+.not_stock{
+    color:red;
+}
+.in_stock{
+    color: green;
+}
+a:link , a:visited{ 
+    color:rgb(112, 130, 211); text-decoration:none; border: none; 
+}
+.fa-star{
+    color:rgb(240, 173, 148) ;
+    padding: 2px;
+}
+.not_filled{
+    color: grey;
+    opacity: 50%;
+}
+.review{
+    text-decoration: underline;
+    /* color: #73858d; */
+}
+
+@media screen and (max-width: 420px){
+    .large_text{
+        font-size: 15px !important;
+    }
+    .small_text{
+        font-size: 5px !important;
+    }
+    .image-container{
+        width: 40px;
+        height: 70%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    #book_page_titile{
+        text-align: center;
+    }
+    .image-container{
+        width: 78px;
+    }
+    .large_text{
+        font-size: 25px;
+    }
+    .small_text{
+        font-size: 10px;
+    }
+    .main-container{
+        flex-direction: column;
+    }
+    .navbar{
+        width: 100%;
+    }
+    .navbar>ul{
+        width: 100%;
+        padding: 0px 25px;
+    }
+    .navbar>ul>li{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 660px){
+    .book_container{
+        margin-left: 2px;
+    }
+    .row{
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+    .book_container:last-child{
+        margin-right: auto;
+        margin-left: 40px;   
+    }
+}
+
+
+
+/* animation of loadind */
+
+.loading {
+	opacity: 0;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	transition: opacity .3s ease-in;
+}
+
+.loading.show {
+	opacity: 1;
+}
+
+.ball {
+	background-color: rgb(240, 173, 148);
+	border-radius: 50%;
+	margin: 20px;
+	height: 10px;
+	width: 10px;
+	animation: jump .5s ease-in infinite;
+}
+
+.ball:nth-of-type(2) {
+	animation-delay: 0.1s;
+}
+
+.ball:nth-of-type(3) {
+	animation-delay: 0.2s;
+}
+
+@keyframes jump {
+	0%, 100% {
+		transform: translateY(0);
+	}
+	
+	50% {
+		transform: translateY(-10px);
+	}
+}
