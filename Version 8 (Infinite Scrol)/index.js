@@ -1,4 +1,4 @@
-count = 0
+count = 0;
 const loading = document.querySelector('.loading');
 
 function loadBook() {
@@ -34,27 +34,48 @@ fetch("books.json")
 
 function load_books()
 {
+    if(count > 102)
+    {
+        showlastPage()
+        window.removeEventListener('scroll', show_more)
+        loading.classList.remove('show');
+        return
+    }
     for (let i=0;i<9;i++)
     {
         loadBook()
     }
 }
+load_books()
 
-window.addEventListener('scroll', () => {
-	const { scrollTop, scrollHeight, clientHeight } = document.documentElement;
-	
-	console.log( { scrollTop, scrollHeight, clientHeight });
-	
-	if(clientHeight + scrollTop >= scrollHeight - 5) {
-		// show the loading animation
-		showLoading();
-	}
-});
-
-function showLoading() {
-	// load more data
-    loading.classList.add('show');
-    setTimeout(load_books, 1000); 
+function showlastPage(){
+    console.log("I got u");
+    const elem = document.createElement("div")
+    elem.classList.add("book_container","col-sm-12")
+    elem.innerHTML = `
+    <div class="card" style="width: 18rem;">
+    <div class="card-header">
+    Looks like you've reached the end
+    </div>
+    </div>
+    `
+    app = document.getElementById("container")
+    app.appendChild(elem)
 }
 
-load_books()
+function showLoading() {
+        loading.classList.add('show');
+        setTimeout(load_books, 10); 
+}
+
+window.addEventListener('scroll', show_more);
+
+function show_more()
+{
+    const { scrollTop, scrollHeight, clientHeight } = document.documentElement;
+	
+	//console.log( { scrollTop, scrollHeight, clientHeight });
+	if(clientHeight + scrollTop >= scrollHeight - 10) {
+		showLoading();
+	}
+}
