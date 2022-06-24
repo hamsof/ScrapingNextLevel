@@ -12,13 +12,14 @@ fetch("books.json")
     book_data = data[count]
     count++;
     rating = Math.floor(Math.random() * 200 + 1)
+    price = Math.floor(Math.random() * 7000 + 3000)
 
     book.innerHTML =
     `
                 <img src="${book_data["imageLink"]}" alt="">
                 <p  class="book_name"><a href="${book_data["link"]}" target="_blank"> ${book_data["title"]}</br> By ${book_data["author"]}</p></a></p>
                 <div class="align-left">
-                    <p class=" price green">${book_data["author"]}</p>
+                    <p class=" price green">Rs.${price}</p>
                     <p class="stock in_stock " data-stock="in stock"><i class="fa fa-check" aria-hidden="true"></i> In stock</p>
                     <div><span class="fa fa-star"></span><span class="fa fa-star "></span><span class="fa fa-star"></span><span class="fa fa-star "></span><span class="fa fa-star not_filled"></span></div>
                     <p class="review green" data-rating="${rating}">${rating} Reviews</p>

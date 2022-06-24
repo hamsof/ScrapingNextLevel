@@ -1,5 +1,35 @@
 [
   {
+    "author": "Avi Silberschatz",
+    "country": "Nigeria",
+    "imageLink": "images/OS concepts.jpg",
+    "language": "English",
+    "link": "https://www.amazon.com/Operating-System-Concepts-Abridged-Companion/dp/1119456339\n",
+    "pages": 209,
+    "title": "Operating System Concepts",
+    "year": 1958
+  },
+  {
+    "author": "Syed Mansoor Sarwar",
+    "country": "Pakistan",
+    "imageLink": "images/Unix.jpg",
+    "language": "English",
+    "link": "https://www.google.com/search?q=Unix+the+textbook+by+mansoor&rlz=1C1CHBD_enPK987PK987&oq=unix+the+textbook+by+mansoor&aqs=chrome.0.69i59j69i57j69i59j69i60l5.4419j0j7&sourceid=chrome&ie=UTF-8\n",
+    "pages": 209,
+    "title": "UNIX The Textbook",
+    "year": 2000
+  },
+  {
+    "author": "Dr. Arif Butt",
+    "country": "Nigeria",
+    "imageLink": "images/taxonomy.jpg",
+    "language": "English",
+    "link": "https://www.amazon.in/Taxonomy-Ids-Arif-Butt/dp/3639294092\n",
+    "pages": 209,
+    "title": "Taxonomy of IDS",
+    "year": 1958
+  },
+  {
     "author": "Chinua Achebe",
     "country": "Nigeria",
     "imageLink": "images/things-fall-apart.jpg",
