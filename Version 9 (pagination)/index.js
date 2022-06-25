@@ -18,6 +18,14 @@ function load_books(index){
     }
     star_data_ater = Math.random().toFixed(2);
     rate = +star+ +star_data_ater
+    if(rate > 5)
+    {
+        rate = 5
+    }
+    if(rate < 1)
+    {
+        rate = 0
+    }
 
     //stock
     stock_arr = [`<p class="stock in_stock " data-stock="in stock"><i class="fa fa-check" aria-hidden="true"></i> In stock</p>`,`<p class="stock not_stock " data-stock="not in stock"><i class="fa fa-times" aria-hidden="true"></i> Not in stock</p>`]
@@ -117,10 +125,10 @@ function load_books_by_page(e)
         index_2 = index_1+15;
 
         actice_class_update = document.getElementById("page_"+(next_id-1))
+        console.log(actice_class_update);
         actice_class_update.parentElement.classList.remove("active")
 
         document.getElementById("page_"+(next_id)).parentElement.classList.add("active")
-
         next_id+=1
 
         if(next_id==8)
