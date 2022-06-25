@@ -24,54 +24,91 @@ function load_books(index){
 //getting id of the element that fired that event
 //behtreen logic 
 
+previous_elem = document.getElementById("page_1_parent")
+var next_id = 2
 
 function load_books_by_page(e)
 {
-    console.log(e);
     console.log(e.target.id);
+
     Id_fired = e.target.id;
+
+
+    e.target.classList.add("active")
+    previous_elem.classList.remove("active")
+
+    r = document.getElementById("next_page")
+    r.classList.remove("disabled")
+    r.classList.add("active")
+
+    previous_elem = e.target;
+
     var index_1;
     var index_2;
+
     next_button = document.getElementById("page_next")
     if(Id_fired == "page_1")
     {
         index_1 = 0;
         index_2 = 15;
+        next_id = 2
     }
     if(Id_fired == "page_2")
     {
         index_1 = 15;
         index_2 = 30;
+        next_id = 3
     }
     if(Id_fired == "page_3")
     {
         index_1 = 30;
         index_2 = 45;
+        next_id = 4
     }
     if(Id_fired == "page_4")
     {
         index_1 = 45;
         index_2 = 60;
+        next_id = 5
     }
     if(Id_fired == "page_5")
     {
         index_1 = 60;
         index_2 = 75;
+        next_id = 6
     }
     if(Id_fired == "page_6")
     {
         index_1 = 75;
         index_2 = 90;
+        next_id = 7
     }
     if(Id_fired == "page_7")
     {
         index_1 = 90;
         index_2 = 103;
+        r = document.getElementById("next_page")
+        r.classList.remove("active")
+        r.classList.add("disabled")
     }
-    if(Id_fired == "page_next")
+    if(Id_fired == "page_8")
     {
-        index_1 = 75;
-        index_2 = 90;
+        index_1 = (next_id-1) * 15;
+        index_2 = index_1+15;
+
+        actice_class_update = document.getElementById("page_"+(next_id-1))
+        actice_class_update.parentElement.classList.remove("active")
+
+        document.getElementById("page_"+(next_id)).parentElement.classList.add("active")
+
+        next_id+=1
+
+        if(next_id==8)
+        {
+            r = document.getElementById("next_page")
+            r.classList.remove("active")
+            r.classList.add("disabled")
+        }
     }     
     container = document.getElementById("container")
     container.innerHTML = ""   
@@ -87,7 +124,7 @@ function load_books_by_page(e)
 })
 }
 
-for(let i=1;i<=7;i++)
+for(let i=1;i<=8;i++)
 {
     var e = "page_" + i;
     var elem = document.getElementById(e)
