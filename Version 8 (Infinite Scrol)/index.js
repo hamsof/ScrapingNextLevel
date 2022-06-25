@@ -10,6 +10,7 @@ fetch("books.json")
     const book = document.createElement("div")
     book.classList.add("book_container","col-sm-4")
     book_data = data[count]
+
     count++;
 
     rating = Math.floor(Math.random() * 200 + 1)
@@ -62,20 +63,17 @@ fetch("books.json")
 
 function load_books()
 {
-    if(count > 102)
-    {
-        showlastPage()
-        window.removeEventListener('scroll', show_more)
-        loading.classList.remove('show');
-        return
-    }
     for (let i=0;i<9;i++)
     {
         if(count > 102)
         {
-            break
+            window.removeEventListener('scroll', show_more)
+            loading.classList.remove('show');
+            showlastPage()
+            return
         }
-        loadBook()
+        else
+            loadBook()
     }
 }
 load_books()
