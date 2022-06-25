@@ -71,6 +71,10 @@ function load_books()
     }
     for (let i=0;i<9;i++)
     {
+        if(count > 102)
+        {
+            break
+        }
         loadBook()
     }
 }
