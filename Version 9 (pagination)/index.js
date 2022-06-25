@@ -32,7 +32,7 @@ function load_books(index){
         <div class="align-left">
             <p class=" price green">Rs.${price}</p>
             ${stock_str}
-            <div class="stars data-rate-star="${rate}">${star_str}</div>
+            <div class="stars" data-rate-star=${rate}>${star_str}</div>
             <p class="review green" data-rating="${rating}">${rating} Reviews</p>
             <button>Add to cart</button>
         </div>
