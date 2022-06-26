@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Version 9 Pagination</title>
+    <!-- external style sheet -->
+    <link rel="stylesheet" href="./index.css">
+
+    <!--Bootstrap style sheet-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!--for icons of tick and cross ans star for in stock-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+
+  </head>
+  <body>
+    <header class="header d-flex align-items-center justify-content-between">
+        <img class="image-container" src="./images//arif.jpg" alt="arif"/>
+         <p> <span class="large_text">Scraper Site</span> </br><span class="small_text"> Developed by Hafiz Abdulmanan (BCSF19M512)<span></p>
+        <img class="image-container" src="./images/pucit.jpg" alt="pucit"/>
+    </header>
+    <section>
+            <div class="items" id="contents">
+                <div id="book_page_titile">Pagination Example</div>
+                <div class="row" id="container">
+                </div>
+            </div>
+    </section>
+
+
+    <section>
+        <nav aria-label="...">
+            <ul class="pagination pagination-lg">
+              <li class="page-item active" id="page_1_parent"><a class="page-link" href="#" id="page_1">1</a></li>
+              <li class="page-item"><a class="page-link" href="#" id="page_2">2</a></li>
+              <li class="page-item"><a class="page-link" href="#" id="page_3">3</a></li>
+              <li class="page-item"><a class="page-link" href="#" id="page_4">4</a></li>
+              <li class="page-item"><a class="page-link" href="#" id="page_5">5</a></li>
+              <li class="page-item"><a class="page-link" href="#" id="page_6">6</a></li>
+              <li class="page-item"><a class="page-link" href="#" id="page_7">7</a></li>
+              <li class="page-item active" id="next_page"><a class="page-link" href="#" id="page_8">Next</a></li>
+            </ul>
+          </nav>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+
+  <script src="index.js"></script>
+</html>
