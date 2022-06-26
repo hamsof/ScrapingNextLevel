@@ -29,6 +29,7 @@ fetch("books.json")
     }
     star_data_ater = Math.random().toFixed(2);
     rate = +star+ +star_data_ater
+    //edge case
     if(rate > 5)
     {
         rate = 5
