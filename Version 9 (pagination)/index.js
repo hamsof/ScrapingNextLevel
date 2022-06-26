@@ -75,6 +75,8 @@ function load_books_by_page(e)
     var index_1;
     var index_2;
 
+    history.pushState({page: 1}, "title 1", "?"+Id_fired)
+
     next_button = document.getElementById("page_next")
     if(Id_fired == "page_1")
     {
