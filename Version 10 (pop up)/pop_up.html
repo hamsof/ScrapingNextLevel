@@ -16,7 +16,8 @@
             border: 2px solid rgb(240, 173, 148);
         }
         .modal-backdrop {
-            background-color: transparent;
+            background-color:transparent;
+
         }
 
     </style>
@@ -34,7 +35,7 @@
         <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="staticBackdropLabel">Taking Scraping to the next level ! </h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <button type="button" class="btn-close" onclick=call_func() data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
             <div class="text-center">
@@ -55,9 +56,16 @@
         </div>
         </div>
         `
-        document.body.appendChild(pop)
+        document.body.append(pop)
         var modal = new bootstrap.Modal(pop.querySelector('.modal'));
-        window.setTimeout(function () {modal.show();}, 1000);
+        window.setTimeout(function () {
+            modal.show();
+        }, 1000);
+
+        function call_func()
+        {
+            window.parent.document.getElementById("frame").style.display = 'none'
+        }
 
     </script>
 
