@@ -1,0 +1,15 @@
+Iframe is a very interesting tag It is a document inside document
+
+We can display other websites on our page like you can display 
+<iframe src="https://Wikipedia.org></frame>
+
+But many websites dont allow us to do that
+
+Read more about : https://blog.logrocket.com/the-ultimate-guide-to-iframes/
+
+
+So sometimes we can not click the things from our bot of selenium as pop up apppears.
+So we need to close it from our bot. 
+
+For this we need to first switch to that frame then click on cross button and then again switch
+to the main document and then starts scraping 
