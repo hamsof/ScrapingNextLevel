@@ -13,3 +13,5 @@ So we need to close it from our bot.
 
 For this we need to first switch to that frame then click on cross button and then again switch
 to the main document and then starts scraping 
+
+Read more about offical documentation : https://www.selenium.dev/documentation/webdriver/browser/frames/
