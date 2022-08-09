@@ -40,6 +40,12 @@ The login page added
   I have scraped all the news of Imran khan and China and then stored in a CSV file
 
 ## Version 12:
+  Scraping of Indeed.com <br>
+
+  Scraping jobs from indeed.com and saving jobs info in a csv file  
+
+
+## Version 13:
   Scraping of Twitter <br>
 
   Type any celebrity name and then scrape any given number of tweets of that person  
