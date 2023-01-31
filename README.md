@@ -1,4 +1,4 @@
-## This is an ongoing version wise project supervised by Dr. Arif Butt (Asst. PUCIT) for scraping from Beautful Soup to Selenium, then working on Scrapy tool to making our own crawler. Will experience new chalanges of scraping and automation through this project.
+## This is an reserch oriented project supervised by Dr. Arif Butt (Proffessor at PUCIT) for scraping from Beautful Soup to Selenium, then working on Scrapy tool to making our own crawler. Have experience new chalanges of scraping and automation through this project.
 
 ## Version 1:
   Simple HTML page <br>
