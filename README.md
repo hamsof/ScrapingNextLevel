@@ -51,4 +51,4 @@ The login page added
   Type any celebrity name and then scrape any given number of tweets of that person  
 
 ## Github pages :
-https://hamsof.github.io/simple-book-show/
+https://hamsof.github.io/ScrapingNextLevel/
